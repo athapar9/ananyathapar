@@ -1,7 +1,7 @@
 import Image from "next/image";
-import Header from "./components/header";
-import headshot from "./images/Headshot_25.jpg";
-import ewiPhoto from "./images/EWI2025-089.jpg";
+import Header from "../components/header";
+import headshot from "../images/Headshot_25.jpg";
+import ewiPhoto from "../images/EWI2025-089.jpg";
 
 export default function Home() {
   return (
