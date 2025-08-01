@@ -2,58 +2,71 @@ import Header from "../components/header";
 
 export default function Contact() {
   return (
-    <div>
+    <div className="min-h-screen bg-[var(--background)] text-[var(--foreground)] transition-colors duration-300">
       <Header />
-      <main className="w-full max-w-[1300px] mx-auto px-6 sm:px-8 py-20">
-        <div className="flex items-center mb-10">
-          <h1 className="text-4xl font-serif text-foreground mr-6 whitespace-nowrap">
+      <main className="w-full max-w-[700px] mx-auto px-6 sm:px-8 py-20 flex flex-col gap-8">
+        <div className="flex items-center">
+          <h1 className="text-3xl font-serif font-medium mr-6 whitespace-nowrap text-[var(--accent)]">
             Contact Me
           </h1>
-          <hr className="flex-grow border-gray-300" />
+          <hr className="flex-grow border-[var(--border-color)] border-t" />
         </div>
 
-        <p className="text-xl font-serif text-foreground mb-8 leading-relaxed">
-          I’d love to hear from you! Whether you have a professional opportunity in mind, 
-          want to chat about tech, share cute dog stories (and pictures, of course!), 
-          or just want to say hi — feel free to reach out via email or LinkedIn.
+        <p className="text-lg font-serif leading-relaxed">
+          I’d love to hear from you! Whether you have a professional opportunity
+          in mind, want to chat about tech, share cute dog stories (and
+          pictures, of course!), or just want to say hi — feel free to reach out
+          via email or LinkedIn.
         </p>
 
-        <div className="space-y-10 max-w-xl">
-          <div className="font-serif text-foreground text-lg space-y-4">
-            <p>
-              <a
-                href="mailto:athapar24@gmail.com"
-                className="underline hover:text-primary"
-              >
-                <em>athapar24@gmail.com</em>
-              </a>{" "}
-              for <strong>professional inquiries</strong>.
-            </p>
-            <p>
-              <a
-                href="mailto:ananyathapar9@gmail.com"
-                className="underline hover:text-primary"
-              >
-                <em>ananyathapar9@gmail.com</em>
-              </a>{" "}
-              for <strong>social inquiries</strong>.
-            </p>
+        <div className="space-y-8 max-w-xl w-full">
+          <div className="flex flex-col gap-6">
+            <a
+              href="mailto:athapar24@gmail.com"
+              className="group p-4 rounded-lg border border-[var(--border-color)] bg-[var(--background)] transition-shadow hover:shadow-lg flex flex-col sm:flex-row sm:items-center gap-2 cursor-pointer"
+            >
+              <span className="font-serif text-lg italic underline decoration-[var(--accent)] underline-offset-4 group-hover:text-[var(--accent)] transition-colors">
+                athapar24@gmail.com
+              </span>
+              <span className="font-serif  text-sm sm:text-base text-[var(--foreground)] transition-colors">
+                for
+                <strong className=" font-semibold">
+                  {" "}
+                  professional inquiries.
+                </strong>
+              </span>
+            </a>
+
+            <a
+              href="mailto:ananyathapar9@gmail.com"
+              className="group p-4 rounded-lg border border-[var(--border-color)] bg-[var(--background)] transition-shadow hover:shadow-lg flex flex-col sm:flex-row sm:items-center gap-2 cursor-pointer"
+            >
+              <span className="font-serif text-lg  underline decoration-[var(--accent)] underline-offset-4 group-hover:text-[var(--accent)] transition-colors">
+                ananyathapar9@gmail.com
+              </span>
+              <span className="font-serif  text-sm sm:text-base text-[var(--foreground)] transition-colors">
+                for
+                <strong className=" font-semibold"> social inquiries.</strong>
+              </span>
+            </a>
           </div>
 
-          <hr className="border-t border-gray-300" />
+          <hr className="border-t border-[var(--border-color)]" />
 
           <a
             href="https://www.linkedin.com/in/ananya-thapar/"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-4 text-2xl font-serif text-foreground hover:text-primary transition-colors max-w-md"
+            className="inline-flex items-center gap-4 text-2xl font-serif text-[var(--accent)] hover:text-[var(--accent)] transition-all duration-300 transform hover:scale-105 cursor-pointer max-w-md"
             style={{ minWidth: "300px" }}
+            aria-label="LinkedIn profile"
           >
             <svg
               className="w-8 h-8"
               fill="currentColor"
               viewBox="0 0 24 24"
               aria-hidden="true"
+              role="img"
             >
               <path
                 fillRule="evenodd"

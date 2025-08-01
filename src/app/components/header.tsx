@@ -1,8 +1,9 @@
 "use client";
 
-import { useState } from 'react';
-import { Dialog, DialogPanel, PopoverGroup } from '@headlessui/react';
-import { XMarkIcon } from '@heroicons/react/24/outline';
+import { useState } from "react";
+import { Dialog, DialogPanel, PopoverGroup } from "@headlessui/react";
+import { XMarkIcon } from "@heroicons/react/24/outline";
+import Link from "next/link";
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -13,27 +14,29 @@ export default function Header() {
         aria-label="Global"
         className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-12"
       >
-        {/* Left: Name */}
         <div className="flex flex-1">
-          <a href="home" className="text-2xl font-serif font-light tracking-tight hover:opacity-80 transition">
+          <Link
+            href="/"
+            className="text-2xl font-serif font-light text-[var(--foreground)] hover:text-[var(--accent)]"
+          >
             Ananya Thapar
-          </a>
+          </Link>
         </div>
 
-        {/* Desktop Nav */}
         <PopoverGroup className="hidden lg:flex lg:gap-x-10">
-          {['Home', 'Work Experience', 'Projects', 'Leadership', 'Contact'].map((item) => (
-            <a
-              key={item}
-              href={`${item.toLowerCase().replace(/\s+/g, '_')}`}
-              className="text-base font-serif font-light hover:underline underline-offset-4 transition"
-            >
-              {item}
-            </a>
-          ))}
+          {["Home", "Work Experience", "Projects", "Leadership", "Contact"].map(
+            (item) => (
+              <a
+                key={item}
+                href={`${item.toLowerCase().replace(/\s+/g, "_")}`}
+                className="text-[var(--foreground)] hover:text-[var(--accent)] font-serif font-light hover:underline underline-offset-4 transition"
+              >
+                {item}
+              </a>
+            )
+          )}
         </PopoverGroup>
 
-        {/* Mobile Menu Button */}
         <div className="lg:hidden">
           <button
             onClick={() => setMobileMenuOpen(true)}
@@ -53,8 +56,11 @@ export default function Header() {
         </div>
       </nav>
 
-      {/* Mobile Dialog */}
-      <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden z-50 relative">
+      <Dialog
+        open={mobileMenuOpen}
+        onClose={setMobileMenuOpen}
+        className="lg:hidden z-50 relative"
+      >
         <div className="fixed inset-0 bg-black/30" aria-hidden="true" />
         <DialogPanel className="fixed top-0 right-0 h-full w-4/5 max-w-sm bg-[#fffaf0] shadow-xl px-6 py-6">
           <div className="flex items-center justify-between">
@@ -72,10 +78,16 @@ export default function Header() {
           </div>
 
           <div className="mt-6 space-y-4">
-            {['Home', 'Work Experience', 'Projects', 'Leadership', 'Contact'].map((item) => (
+            {[
+              "Home",
+              "Work Experience",
+              "Projects",
+              "Leadership",
+              "Contact",
+            ].map((item) => (
               <a
                 key={item}
-                href={`${item.toLowerCase().replace(/\s+/g, '_')}`}
+                href={`${item.toLowerCase().replace(/\s+/g, "_")}`}
                 className="block text-lg font-serif font-light hover:underline"
               >
                 {item}

@@ -17,10 +17,10 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background:   #464e6b;   
-    --foreground: #e3dfdf; 
-    --accent: #a65b3a;
-    --border-color: #c7bfb7; 
+    --background:  #f8f3ea;
+    --foreground:  #2b2b2b;
+    --accent: #a8674c;
+    --border-color: #c7bfb7;
   }
 }
 

@@ -7,9 +7,8 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       <Header />
-      <main className="w-full max-w-[1200px] mx-auto px-6 sm:px-8 py-20">
+      <main className="w-full max-w-[1200px] mx-auto px-6 py-16">
         <section className="flex flex-col-reverse lg:flex-row items-start gap-20">
-          {/* LEFT: TEXT CONTENT */}
           <div className="flex-grow text-[18px] leading-[1.8] font-serif max-w-full lg:max-w-[600px]">
             <div className="flex items-center mb-8">
               <h1 className="text-[var(--accent)] text-3xl font-medium">
@@ -34,7 +33,7 @@ export default function Home() {
 
             <p className="mb-5">
               I have a deep love for building things that are equal parts
-              technical and human-centered, and I’m especially energized by work
+              technical and human-centered, and I’m especially drawn to work
               that lets me collaborate across disciplines, connect with people,
               and see real-world impact.
             </p>
@@ -75,8 +74,6 @@ export default function Home() {
 
             <div className="border-t border-[color:var(--border-color)] w-full max-w-xl mt-8" />
           </div>
-
-          {/* RIGHT: PHOTOS */}
           <div className="flex flex-col gap-6 w-full lg:w-[480px]">
             <div className="group relative w-full h-[500px] rounded-xl overflow-hidden shadow-[0_8px_20px_rgba(0,0,0,0.08)]">
               <Image
