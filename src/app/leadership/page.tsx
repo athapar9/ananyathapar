@@ -28,7 +28,7 @@ export default function Leadership() {
             </p>
 
             <h2 className="text-xl font-semibold mb-3 text-[var(--accent)]">
-              Cal Poly SWE, 2024–2025
+              Cal Poly Society of Women Engineers
             </h2>
             <p className="mb-4">
               As President, I managed an{" "}
@@ -37,7 +37,7 @@ export default function Leadership() {
               <strong>100 annual events</strong> for more than{" "}
               <strong>600 members</strong>. The structure resembled a tech
               organization— similar to a Group Engineering Manager
-              role—overseeing multiple leads, aligning strategy across teams,
+              role—overseeing multiple leads, aligning goals across teams,
               and fostering a shared mission.
             </p>
 
@@ -57,8 +57,8 @@ export default function Leadership() {
             <ul className="list-disc ml-6 mb-6 space-y-2">
               <li>
                 Coauthored national award applications that earned CPSWE the{" "}
-                <strong>Boeing Multicultural Award</strong> and{" "}
-                <strong>Gold Mission Award</strong> at WE24
+                <strong>Boeing Multicultural Award</strong> and the{" "}
+                <strong>Gold Section Mission Award</strong> at WE24
               </li>
               <li>
                 Led outreach that impacted <strong>6,000+ K–12 students</strong>{" "}
