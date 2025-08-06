@@ -6,77 +6,170 @@ import ewi_speaking from "../images/EWI2025-089.jpg";
 
 export default function Leadership() {
   return (
-    <div>
+    <div className="min-h-screen">
       <Header />
-      <main className="w-full max-w-[1300px] mx-auto px-4 sm:px-6 flex flex-col items-start justify-center font-serif">
-        <section className="flex flex-col lg:flex-row items-start gap-12 mt-10 w-full">
-          <div className="flex-grow text-[1.125rem] font-serif text-foreground leading-relaxed max-w-full">
-            <div className="flex items-center mb-6 w-full max-w-xl">
-              <h1 className="text-3xl text-[var(--accent)] font-serif mr-4 whitespace-nowrap">
-                Leadership & Service in SWE
+      <main className="w-full max-w-[1200px] mx-auto px-6 py-10">
+        <section className="flex flex-col lg:flex-row items-start gap-20">
+          <div className="flex-grow text-[18px] leading-[1.8] font-serif max-w-full lg:max-w-[600px]">
+            <div className="flex items-center mb-8">
+              <h1 className="text-3xl text-[var(--accent)] font-medium mr-4 whitespace-nowrap">
+                Leadership
               </h1>
               <div className="flex-grow border-t border-[var(--border-color)] ml-4" />
             </div>
 
             <p className="mb-5">
-              I’m passionate about advancing inclusive, equitable communities within engineering through collaborative leadership and cross-functional teamwork. As President of Cal Poly’s Society of Women Engineers (CPSWE) during the 2023–2024 academic year, I led a team of 40+ officers and oversaw the execution of more than 100 events annually, amplifying the visibility and impact of the College of Engineering.
+              I’m passionate about building inclusive, equitable
+              communities—spaces where everyone feels respected, appreciated,
+              and above all, valued. During my time at Cal Poly, I pursued this
+              mission through leadership, especially through my work as
+              President of the Cal Poly Society of Women Engineers (CPSWE), one
+              of the largest SWE collegiate sections nationwide.
             </p>
 
-            <p className="mb-5">Some key accomplishments from my time leading CPSWE:</p>
-
-            <ul className="list-disc ml-6 mb-5 space-y-2">
-            <li>
-            Provide direct leadership to an eight-member executive board and indirectly oversee a 40+ member officer team by facilitating communication, one-on-one check-ins, and leadership development
-            </li>
-              
-              <li>
-                Coauthoring CPSWE’s successful national award applications, earning the <strong>Boeing Multicultural Award</strong> and the <strong>Gold Section Collegiate Award</strong> at the WE24 Conference.
-              </li>
-              <li>
-              Provide strategic oversight and guidance for CPSWE’s largest events, including networking events and corporate partnerships, contributing to the success of 360+ attendee events
-              </li>
-              <li>
-              Drive outreach initiatives reaching <strong>6,000+</strong> students in underrepresented communities, expanding access to STEM opportunities.
-              </li>
-              <li>
-              Lead and facilitate executive board meetings, officer meetings, and weekly advisor meetings, ensuring clear communication, goal alignment, and problem-solving
-              </li>
-              <li>
-              Facilitated a partnership with Pasadena City community college to help them become a SWE affiliate, increasing accessibility and representation in engineering
-              </li>
-              <li>
-              Champion diversity, equity, and inclusion (DEI) by integrating initiatives across all organizational cores, including launching DEI Assistants and bilingual outreach programs
-              </li>
-              <li>
-              Organize and host weekly general meetings for 600+ members, collaborating with officers and 15+ corporate partners to ensure engaging and impactful programming
-              </li>
-            </ul>
-
-            <h2 className="text-2xl font-serif mb-4">Previous Leadership Roles & Mentorship</h2>
-
+            <h2 className="text-xl font-semibold mb-3 text-[var(--accent)]">
+              Cal Poly SWE, 2024–2025
+            </h2>
             <p className="mb-4">
-              Prior to my presidency, I served as Vice President of Member Relations, leading a team of five officers to organize 25+ academic, social, and professional events. I managed the Mentor/Mentee Program, supporting over 300 students, and personally mentored five freshman representatives who successfully became officers. As Professional Development Chair, I coordinated workshops and academic events involving 10 Cal Poly departments and organized club showcases that drew 400+ new students.
+              As President, I managed an{" "}
+              <strong>eight-member executive board</strong> and supported{" "}
+              <strong>40+ officers</strong> in executing over{" "}
+              <strong>100 annual events</strong> for more than{" "}
+              <strong>600 members</strong>. The structure resembled a tech
+              organization— similar to a Group Engineering Manager
+              role—overseeing multiple leads, aligning strategy across teams,
+              and fostering a shared mission.
             </p>
 
             <p className="mb-5">
-              Outside of SWE, I contributed as a mentorship officer for <a href="https://wishcalpoly.com/" className="underline decoration-[var(--accent)] underline-offset-4 hover:text-[var(--accent)] transition">Women in Software and Hardware (WISH)</a>, guiding dozens of underclassmen—especially from underrepresented groups—in building community and leadership skills. Additionally, I represented Cal Poly in The Percentage Project, a national initiative focused on amplifying the voices of marginalized groups in STEM through data-driven advocacy.
+              I developed skills in strategic communication, one-on-one
+              mentorship, conflict resolution, and leadership development. I
+              learned to lead with empathy, drive cross-functional
+              collaboration, and build a mission-driven culture. I also
+              partnered with university administration to secure funding,
+              advocate for club operations, and scale outreach and industry
+              relationships.
             </p>
 
-            <h2 className="text-2xl font-serif mb-4">Awards & Honors</h2>
+            <h3 className="text-lg text-[var(--accent)] font-semibold mt-6 mb-2">
+              Highlights
+            </h3>
+            <ul className="list-disc ml-6 mb-6 space-y-2">
+              <li>
+                Coauthored national award applications that earned CPSWE the{" "}
+                <strong>Boeing Multicultural Award</strong> and{" "}
+                <strong>Gold Mission Award</strong> at WE24
+              </li>
+              <li>
+                Led outreach that impacted <strong>6,000+ K–12 students</strong>{" "}
+                through bilingual STEM activities and school programs
+              </li>
+              <li>
+                Organized and facilitated weekly general meetings in partnership
+                with SWE’s five core teams and{" "}
+                <strong>15+ corporate sponsors</strong>
+              </li>
+              <li>
+                Advanced DEI by overseeing creation of DEI Assistant roles,
+                promoting cross-team collaboration, and embedding inclusive
+                practices into officer training and event design
+              </li>
+            </ul>
 
-            <p>
-              <strong>Outstanding Graduating Student Award</strong> — one of four selected from over 6,000 engineering students at Cal Poly.
-            </p>
-            <p>
-              <strong>SWE Outstanding Collegiate Member</strong> — nationally recognized among 20 recipients for leadership and impact.
+            <h2 className="text-xl font-semibold mb-3 text-[var(--accent)]">
+              Previous Roles in CPSWE
+            </h2>
+            <ul className="list-disc ml-6 mb-6 space-y-2">
+              <li>
+                <strong>Vice President of Member Relations</strong> — Led a team
+                of 5 to coordinate 25+ events, managed a 300+ person
+                Mentor/Mentee Program, and mentored 5 freshman reps—all of whom
+                became officers
+              </li>
+              <li>
+                <strong>Professional Development Chair</strong> — Ran joint
+                workshops with 10+ departments and led recruitment at a showcase
+                that drew 300+ attendees
+              </li>
+            </ul>
+
+            <h2 className="text-xl font-semibold mb-3 text-[var(--accent)]">
+              Additional Leadership & Mentorship
+            </h2>
+            <p className="mb-5">
+              Beyond CPSWE, I was invovled in {" "}
+              <a
+                href="https://wishcalpoly.com/"
+                className="underline decoration-[var(--accent)] underline-offset-4 hover:text-[var(--accent)] transition"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Women in Software and Hardware (WISH)
+              </a>
+              {" "} and served as a Mentorship Officer, supporting underclassmen in building community and confidence. I also
+              represented Cal Poly in{" "}
+              <a
+                href="https://thepercentageproject.com/"
+                className="underline decoration-[var(--accent)] underline-offset-4 hover:text-[var(--accent)] transition"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                The Percentage Project
+              </a>
+              , a national campaign to spotlight and improve the experiences of
+              underrepresented students in STEM.
             </p>
 
-            <div className="border-b border-gray-300 w-full max-w-xl mt-6" />
+            <h2 className="text-xl font-semibold mb-3 text-[var(--accent)]">
+              Awards & Honors
+            </h2>
+            <ul className="space-y-4 list-none">
+              <li>
+                <p>
+                  <span className="font-semibold">
+                    
+                    <a
+                      href="https://ceng.calpoly.edu/connection/2025/06/college-of-engineering-student-awards/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-[var(--accent)] underline"
+                    >
+                      Outstanding Graduating Student Award{" "}
+                    </a>
+                    - Cal Poly College of Engineering
+                  </span>
+                  
+                </p>
+                <ul className="list-disc ml-6 mt-1">
+                  <li>
+                    Awarded to one of four students from a graduating class of
+                    over 6,000 engineers.
+                  </li>
+                </ul>
+              </li>
+              {/* <li>
+                <p>
+                  <strong>Outstanding Collegiate Member</strong>{" "}
+                  <span className="font-semibold">
+                    - Society of Women Engineers
+                  </span>
+                </p>
+                <ul className="list-disc ml-6 mt-1">
+                  <li>
+                    National recognition awarded to the top 20 student leaders
+                    across all SWE collegiate sections for exemplary leadership
+                    and impact.
+                  </li>
+                </ul>
+              </li> */}
+            </ul>
+
+            <div className="border-t border-[color:var(--border-color)] w-full max-w-xl mt-8" />
           </div>
 
-          <div className="flex flex-col gap-4 w-full max-w-[500px] flex-shrink-0">
+          <div className="flex flex-col gap-6 w-full lg:w-[480px]">
             <div className="grid grid-cols-2 gap-4 w-full">
-              <div className="group relative h-[250px] rounded-xl overflow-hidden shadow-[0_8px_20px_rgba(0,0,0,0.08)] cursor-pointer">
+              <div className="group relative h-[450px] rounded-xl overflow-hidden shadow-[0_8px_20px_rgba(0,0,0,0.08)] cursor-pointer">
                 <Image
                   src={ewi_advisor}
                   alt="Photo with my advisor, Dr. Helene Finger"
@@ -90,7 +183,7 @@ export default function Leadership() {
                 </div>
               </div>
 
-              <div className="group relative h-[250px] rounded-xl overflow-hidden shadow-[0_8px_20px_rgba(0,0,0,0.08)] cursor-pointer">
+              <div className="group relative h-[450px] rounded-xl overflow-hidden shadow-[0_8px_20px_rgba(0,0,0,0.08)] cursor-pointer">
                 <Image
                   src={ewi_speaking}
                   alt="Ananya speaking at Evening With Industry"
@@ -105,7 +198,7 @@ export default function Leadership() {
               </div>
             </div>
 
-            <div className="group relative w-full h-[300px] rounded-xl overflow-hidden shadow-[0_8px_20px_rgba(0,0,0,0.08)] cursor-pointer">
+            <div className="group relative w-full h-[400px] rounded-xl overflow-hidden shadow-[0_8px_20px_rgba(0,0,0,0.08)] cursor-pointer">
               <Image
                 src={ewi24}
                 alt="Cal Poly Society of Women Engineers Executive Board 2023–2024"

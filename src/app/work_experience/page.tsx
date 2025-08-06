@@ -68,7 +68,7 @@ export default function Work() {
   return (
     <div className="min-h-screen">
       <Header />
-      <main className="w-full max-w-[1200px] mx-auto flex justify-center px-4 sm:px-6 py-5">
+      <main className="w-full max-w-[1200px] mx-auto flex justify-center px-4 sm:px-6">
         <section className="w-full max-w-4xl mt-8">
           <div className="text-lg font-serif text-foreground leading-relaxed">
             <div className="flex items-center mb-8">

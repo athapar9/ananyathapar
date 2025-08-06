@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       <Header />
-      <main className="w-full max-w-[1200px] mx-auto px-6 py-16">
+      <main className="w-full max-w-[1200px] mx-auto px-6 py-10">
         <section className="flex flex-col-reverse lg:flex-row items-start gap-20">
           <div className="flex-grow text-[18px] leading-[1.8] font-serif max-w-full lg:max-w-[600px]">
             <div className="flex items-center mb-8">

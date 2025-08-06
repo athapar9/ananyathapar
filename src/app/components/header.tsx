@@ -8,6 +8,14 @@ import Link from "next/link";
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
+  const navItems = [
+    { label: "Home", href: "/" },
+    { label: "Work Experience", href: "/work_experience" },
+    { label: "Projects", href: "/projects" },
+    { label: "Leadership", href: "/leadership" },
+    { label: "Contact", href: "/contact" },
+  ];
+
   return (
     <header className="border-t border-gray-200 shadow-sm">
       <nav
@@ -24,17 +32,15 @@ export default function Header() {
         </div>
 
         <PopoverGroup className="hidden lg:flex lg:gap-x-10">
-          {["Home", "Work Experience", "Projects", "Leadership", "Contact"].map(
-            (item) => (
-              <a
-                key={item}
-                href={`${item.toLowerCase().replace(/\s+/g, "_")}`}
-                className="text-[var(--foreground)] hover:text-[var(--accent)] font-serif font-light hover:underline underline-offset-4 transition"
-              >
-                {item}
-              </a>
-            )
-          )}
+          {navItems.map(({ label, href }) => (
+            <Link
+              key={label}
+              href={href}
+              className="text-[var(--foreground)] hover:text-[var(--accent)] font-serif font-light hover:underline underline-offset-4 transition"
+            >
+              {label}
+            </Link>
+          ))}
         </PopoverGroup>
 
         <div className="lg:hidden">
@@ -64,13 +70,16 @@ export default function Header() {
         <div className="fixed inset-0 bg-black/30" aria-hidden="true" />
         <DialogPanel className="fixed top-0 right-0 h-full w-4/5 max-w-sm bg-[#fffaf0] shadow-xl px-6 py-6">
           <div className="flex items-center justify-between">
-            <a href="home" className="text-xl font-serif font-light ">
+            <Link
+              href="/"
+              className="text-xl font-serif font-light text-[var(--foreground)] hover:text-[var(--accent)]"
+            >
               Ananya Thapar
-            </a>
+            </Link>
             <button
               type="button"
               onClick={() => setMobileMenuOpen(false)}
-              className="p-2 rounded-md hover"
+              className="p-2 rounded-md"
             >
               <XMarkIcon className="h-6 w-6" aria-hidden="true" />
               <span className="sr-only">Close menu</span>
@@ -78,20 +87,15 @@ export default function Header() {
           </div>
 
           <div className="mt-6 space-y-4">
-            {[
-              "Home",
-              "Work Experience",
-              "Projects",
-              "Leadership",
-              "Contact",
-            ].map((item) => (
-              <a
-                key={item}
-                href={`${item.toLowerCase().replace(/\s+/g, "_")}`}
-                className="block text-lg font-serif font-light hover:underline"
+            {navItems.map(({ label, href }) => (
+              <Link
+                key={label}
+                href={href}
+                className="block text-lg font-serif font-light text-[var(--foreground)] hover:text-[var(--accent)] hover:underline underline-offset-4 transition"
+                onClick={() => setMobileMenuOpen(false)}
               >
-                {item}
-              </a>
+                {label}
+              </Link>
             ))}
           </div>
         </DialogPanel>

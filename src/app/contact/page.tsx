@@ -4,7 +4,7 @@ export default function Contact() {
   return (
     <div className="min-h-screen bg-[var(--background)] text-[var(--foreground)] transition-colors duration-300">
       <Header />
-      <main className="w-full max-w-[700px] mx-auto px-6 sm:px-8 py-20 flex flex-col gap-8">
+      <main className="w-full max-w-[700px] mx-auto px-6 sm:px-8 py-10 flex flex-col gap-8">
         <div className="flex items-center">
           <h1 className="text-3xl font-serif font-medium mr-6 whitespace-nowrap text-[var(--accent)]">
             Contact Me

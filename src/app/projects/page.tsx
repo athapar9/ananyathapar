@@ -32,7 +32,7 @@ export default function Projects() {
   return (
     <div className="min-h-screen">
       <Header />
-      <main className="w-full max-w-[900px] mx-auto px-4 sm:px-6 py-5 flex flex-col items-start justify-center mt-10">
+      <main className="w-full max-w-[900px] mx-auto px-4 sm:px-6 flex flex-col items-start justify-center mt-10">
         <section className="w-full">
           <div className="flex flex-col w-full mb-6">
             <div className="flex items-center w-full">
