@@ -45,14 +45,14 @@ export default function Home() {
             </p>
 
             <p className="mb-5">
-              This year, I had the privilege of serving as President of{" "}
+              In 2024-2025, I had the privilege of serving as President of{" "}
               <a
                 href="https://www.calpolyswe.com/"
                 className="underline decoration-[var(--accent)] underline-offset-4 hover:text-[var(--accent)] transition"
               >
                 Cal Poly’s Society of Women Engineers
               </a>{" "}
-              — one of the largest SWE sections in the nation. Leading this
+              , one of the largest SWE sections in the nation. Leading this
               incredible community has deepened my passion for fostering
               inclusive environments where everyone can thrive and grow.
             </p>
@@ -64,12 +64,15 @@ export default function Home() {
             </p>
 
             <p className="mb-5">
-              Outside of engineering, I love staying active — whether hiking,
-              practicing yoga, or working out. Cooking with friends, discovering
-              new coffee spots, and curling up with a good memoir or essay while
-              cuddling with my dog are some of my favorite ways to unwind. I’m
-              always learning and finding inspiration in the people and
-              experiences around me.
+              Outside of engineering, I enjoy staying active through hiking,
+              yoga, working out, and spending time by the water. I also love
+              cooking with friends, discovering new coffee spots, and curling up
+              with my dog and a good book to recharge.
+            </p>
+
+            <p className="mb-5">
+              Feel free to reach out if you want to chat about anything, talk tech,
+              or connect about life beyond engineering!
             </p>
 
             <div className="border-t border-[color:var(--border-color)] w-full max-w-xl mt-8" />

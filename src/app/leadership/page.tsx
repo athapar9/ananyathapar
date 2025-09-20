@@ -147,7 +147,7 @@ export default function Leadership() {
                   </li>
                 </ul>
               </li>
-              {/* <li>
+              <li>
                 <p>
                   <strong>Outstanding Collegiate Member</strong>{" "}
                   <span className="font-semibold">
@@ -161,7 +161,7 @@ export default function Leadership() {
                     and impact.
                   </li>
                 </ul>
-              </li> */}
+              </li>
             </ul>
 
             <div className="border-t border-[color:var(--border-color)] w-full max-w-xl mt-8" />

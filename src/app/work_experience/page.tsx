@@ -58,7 +58,7 @@ const experiences = [
     tech: ["HTML", "JavaScript", "CSS"],
     bullets: [
       "Collaborated with fellow interns to develop an interactive website featuring 3 multiplayer game and drawing modes",
-      "Mentored by a Cornell University computer science undergraduate throughout the project",
+      "Mentored by a Cornell University computer science student throughout the project",
       "Designed dynamic, user-friendly web pages using HTML, JavaScript, and CSS to enhance UX/UI",
     ],
   },
