@@ -26,9 +26,9 @@ export default function Home() {
                 Cal Poly San Luis Obispo
               </a>
               , with a B.S. in Computer Science and a concentration in
-              Artificial Intelligence. This September, I’m beyond excited to be
-              joining Microsoft as a software engineer — but my passions go far
-              beyond coding.
+              Artificial Intelligence. As of September, I’m beyond excited to be
+              joining Microsoft as a software engineer but my passions go far
+              beyond coding!
             </p>
 
             <p className="mb-5">
