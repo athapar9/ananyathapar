@@ -58,12 +58,6 @@ export default function Home() {
             </p>
 
             <p className="mb-5">
-              In September, I’ll be relocating to Seattle, bringing my passion
-              for innovation, collaboration, and inclusive leadership into this
-              exciting next chapter.
-            </p>
-
-            <p className="mb-5">
               Outside of work, I enjoy hiking, yoga, cooking with friends,
               exploring coffee spots, and curling up with my dog and a good
               book.
