@@ -7,7 +7,7 @@ const projects = [
     points: [
       "Built and analyzed CNN pipelines on a 10,000-image dataset, boosting dog breed classification accuracy from 75% to 90% using top-k accuracy, loss curves, and confusion matrices",
     ],
-    github: "https://github.com/athapar9/dog-breed-classification",
+    github: "https://github.com/ananyaaa-t/dog-breed-classification",
   },
   {
     title: "Reddit r/place Data Analysis",
@@ -15,7 +15,7 @@ const projects = [
     points: [
       "Analyzed 21GB of data from the 2022 r/place event using advanced data processing tools to uncover user behavior, pixel placement trends, and the influence of highly active users across timeframes",
     ],
-    github: "https://github.com/athapar9/Reddit-Analysis",
+    github: "https://github.com/ananyaaa-tReddit-Analysis",
   },
   {
     title: "Potion Shop API",
@@ -24,7 +24,7 @@ const projects = [
       "Designed and deployed a cloud-hosted RESTful API simulating an online potion shop with 100k+ unique product combinations, managing inventory, pricing, and cart workflows for 1,500 concurrent simulated customers during a multi-week competition",
       "Engineered backend logic with SQLAlchemy and PostgreSQL to ensure low-latency, concurrency-safe operations under heavy load, supporting 24/7 high-traffic simulation cycles",
     ],
-    github: "https://github.com/athapar9/Potion-Shop-API",
+    github: "https://github.com/ananyaaa-t/Potion-Shop-API",
   },
 ];
 
