@@ -15,7 +15,7 @@ const projects = [
     points: [
       "Analyzed 21GB of data from the 2022 r/place event using advanced data processing tools to uncover user behavior, pixel placement trends, and the influence of highly active users across timeframes",
     ],
-    github: "https://github.com/ananyaaa-tReddit-Analysis",
+    github: "https://github.com/ananyaaa-t/Reddit-Analysis",
   },
   {
     title: "Potion Shop API",
