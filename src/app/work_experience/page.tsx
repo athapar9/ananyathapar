@@ -7,6 +7,16 @@ import treesLogo from "../images/treesLogo.png";
 import codedayLogo from "../images/codedayLogo.jpg";
 
 const experiences = [
+  //   {
+  //   logo: microsoftLogo,
+  //   company: "Microsoft",
+  //   title: "Software Engineer",
+  //   duration: "September 2024 – Present",
+  //   tech: [".NET", "C#", "Azure", "TypeScript"],
+  //   bullets: [
+  //     "To be added.",
+  //   ],
+  // },
   {
     logo: microsoftLogo,
     company: "Microsoft",

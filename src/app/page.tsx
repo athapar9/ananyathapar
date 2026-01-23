@@ -18,7 +18,8 @@ export default function Home() {
             </div>
 
             <p className="mb-5">
-              I recently graduated in June 2025 from{" "}
+              I’m an early-career software engineer at Microsoft, and I recently
+              graduated in June 2025 from{" "}
               <a
                 href="https://www.calpoly.edu/major/computer-science"
                 className="underline decoration-[var(--accent)] underline-offset-4 hover:text-[var(--accent)] transition"
@@ -26,16 +27,15 @@ export default function Home() {
                 Cal Poly San Luis Obispo
               </a>
               , with a B.S. in Computer Science and a concentration in
-              Artificial Intelligence. As of September, I’m beyond excited to be
-              joining Microsoft as a software engineer but my passions go far
-              beyond coding!
+              Artificial Intelligence. I’m passionate about building meaningful,
+              user-facing products that make a real impact.
             </p>
 
             <p className="mb-5">
-              I have a deep love for building things that are equal parts
-              technical and human-centered, and I’m especially drawn to work
-              that lets me collaborate across disciplines, connect with people,
-              and see real-world impact.
+              I love work that blends technical depth with human-centered
+              design. I thrive on collaborating across disciplines, solving
+              challenging problems, connecting with people, and seeing
+              real-world impact from the projects I build.
             </p>
 
             <p className="mb-5">
@@ -64,15 +64,14 @@ export default function Home() {
             </p>
 
             <p className="mb-5">
-              Outside of engineering, I enjoy staying active through hiking,
-              yoga, working out, and spending time by the water. I also love
-              cooking with friends, discovering new coffee spots, and curling up
-              with my dog and a good book to recharge.
+              Outside of work, I enjoy hiking, yoga, cooking with friends,
+              exploring coffee spots, and curling up with my dog and a good
+              book.
             </p>
 
             <p className="mb-5">
-              Feel free to reach out if you want to chat about anything, talk tech,
-              or connect about life beyond engineering!
+              Feel free to reach out if you want to chat about tech, product, or
+              life beyond engineering!
             </p>
 
             <div className="border-t border-[color:var(--border-color)] w-full max-w-xl mt-8" />
