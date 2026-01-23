@@ -33,9 +33,9 @@ export default function Home() {
 
             <p className="mb-5">
               I love work that blends technical depth with human-centered
-              design. I thrive on collaborating across disciplines, solving
-              challenging problems, connecting with people, and seeing
-              real-world impact from the projects I build.
+              design. In particular, I thrive on collaborating across
+              disciplines, solving challenging problems, connecting with people,
+              and seeing real-world impact from the projects I build.
             </p>
 
             <p className="mb-5">
