@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       <Header />
-      <main className="w-full max-w-[1200px] mx-auto px-6 py-10">
+      <main className="w-full max-w-[1200px] mx-auto px-6 py-20">
         <section className="flex flex-col-reverse lg:flex-row items-start gap-20">
           <div className="flex-grow text-[18px] leading-[1.8] font-serif max-w-full lg:max-w-[600px]">
             <div className="flex items-center mb-8">
@@ -33,7 +33,7 @@ export default function Home() {
 
             <p className="mb-5">
               I love work that blends technical depth with human-centered
-              design. In particular, I thrive on collaborating across
+              design. I especially thrive on collaborating across
               disciplines, solving challenging problems, connecting with people,
               and seeing real-world impact from the projects I build.
             </p>
