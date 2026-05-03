@@ -179,7 +179,7 @@ export default function Leadership() {
                   sizes="(max-width: 1024px) 100vw, 240px"
                 />
                 <div className="absolute bottom-0 left-0 w-full bg-[rgba(0,0,0,0.4)] text-white text-sm px-3 py-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  Photo with my advisor, Dr. Helene Finger
+                  Photo with my club advisor, Dr. Helene Finger
                 </div>
               </div>
 
