@@ -11,7 +11,7 @@ const experiences = [
     logo: microsoftLogo,
     company: "Microsoft",
     title: "Software Engineer",
-    duration: "September 2024 – Present",
+    duration: "September 2025 – Present",
     tech: [".NET", "C#", "Azure", "TypeScript"],
     bullets: [
       "Built a cross-cloud parity dashboard for Azure aggregating data from 100+ resource providers across 4 environments using parallelized queries and batching to reduce latency, enabling visibility and eliminating manual validation workflows",
