@@ -7,16 +7,18 @@ import treesLogo from "../images/treesLogo.png";
 import codedayLogo from "../images/codedayLogo.jpg";
 
 const experiences = [
-  //   {
-  //   logo: microsoftLogo,
-  //   company: "Microsoft",
-  //   title: "Software Engineer",
-  //   duration: "September 2024 – Present",
-  //   tech: [".NET", "C#", "Azure", "TypeScript"],
-  //   bullets: [
-  //     "To be added.",
-  //   ],
-  // },
+    {
+    logo: microsoftLogo,
+    company: "Microsoft",
+    title: "Software Engineer",
+    duration: "September 2024 – Present",
+    tech: [".NET", "C#", "Azure", "TypeScript"],
+    bullets: [
+      "Built a cross-cloud parity dashboard for Azure aggregating data from 100+ resource providers across 4 environments using parallelized queries and batching to reduce latency, enabling visibility and eliminating manual validation workflows",
+      "Resolved a 25% test failure rate by consolidating 4 fragmented suites into a unified cloud-based testing framework, restoring release confidence across the team",
+      "Eliminated redundant error-handling across APIs by designing a modular exception architecture with a centralized mapping system, simplifying debugging and improving consistency and maintainability across endpoints"
+    ],
+  },
   {
     logo: microsoftLogo,
     company: "Microsoft",
