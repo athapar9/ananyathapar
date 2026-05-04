@@ -18,8 +18,7 @@ export default function Home() {
             </div>
 
             <p className="mb-5">
-              I’m an early-career software engineer at Microsoft, and I recently
-              graduated in June 2025 from{" "}
+              I&apos;m a Software Engineer for Azure Compute at Microsoft, where I build and improve systems that power cloud infrastructure at scale. I graduated in June 2025 from{" "}
               <a
                 href="https://www.calpoly.edu/major/computer-science"
                 className="underline decoration-[var(--accent)] underline-offset-4 hover:text-[var(--accent)] transition"
@@ -27,8 +26,7 @@ export default function Home() {
                 Cal Poly San Luis Obispo
               </a>
               , with a B.S. in Computer Science and a concentration in
-              Artificial Intelligence. I’m passionate about building meaningful,
-              user-facing products that make a real impact.
+              Artificial Intelligence.
             </p>
 
             <p className="mb-5">
