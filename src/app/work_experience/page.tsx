@@ -1,22 +1,23 @@
 "use client";
 import Image from "next/image";
 import Header from "../components/header";
+import Footer from "../components/footer";
+import FadeUp from "../components/FadeUp";
 import microsoftLogo from "../images/microsoftLogo.jpg";
 import northropLogo from "../images/northropLogo.png";
 import treesLogo from "../images/treesLogo.png";
-import codedayLogo from "../images/codedayLogo.jpg";
 
 const experiences = [
-    {
+  {
     logo: microsoftLogo,
     company: "Microsoft",
     title: "Software Engineer",
     duration: "September 2025 – Present",
-    tech: [".NET", "C#", "Azure", "TypeScript, KQL"],
+    tech: [".NET", "C#", "Azure", "TypeScript", "KQL"],
     bullets: [
       "Built a cross-cloud parity dashboard for Azure aggregating data from 100+ resource providers across 4 environments using parallelized queries and batching to reduce latency, enabling visibility and eliminating manual validation workflows",
       "Resolved a 25% test failure rate by consolidating 4 fragmented suites into a unified cloud-based testing framework, restoring release confidence across the team",
-      "Eliminated redundant error-handling across APIs by designing a modular exception architecture with a centralized mapping system, simplifying debugging and improving consistency and maintainability across endpoints"
+      "Eliminated redundant error-handling across APIs by designing a modular exception architecture with a centralized mapping system, simplifying debugging and improving consistency and maintainability across endpoints",
     ],
   },
   {
@@ -48,102 +49,106 @@ const experiences = [
     company: "Trees.app",
     title: "Software Development Intern",
     duration: "June 2022 – September 2022",
-    tech: [
-      "PostgreSQL",
-      "Python",
-      "Flutter",
-      "Dart",
-      "JavaScript",
-      "REST APIs",
-    ],
+    tech: ["PostgreSQL", "Python", "Flutter", "Dart", "JavaScript", "REST APIs"],
     bullets: [
       "Enhanced API efficiency by 35% through codebase refactoring and comprehensive documentation",
       "Streamlined operations and enhanced user engagement by optimizing machine learning endpoints",
       "Designed and developed a new daily challenge feature based on data retrieved from a PostgreSQL database",
     ],
-  },
-  {
-    logo: codedayLogo,
-    company: "CodeDay Labs",
-    title: "Labs Intern",
-    duration: "June 2021 – August 2021",
-    tech: ["HTML", "JavaScript", "CSS"],
-    bullets: [
-      "Co-developed an interactive website featuring 3 multiplayer game and drawing modes",
-      "Mentored by a Cornell University computer science student throughout the project",
-      "Designed dynamic, user-friendly web pages using HTML, JavaScript, and CSS to enhance UX/UI",
-    ],
-  },
+  }
 ];
 
 export default function Work() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen flex flex-col">
       <Header />
-      <main className="w-full max-w-[1200px] mx-auto flex justify-center px-4 sm:px-6">
-        <section className="w-full max-w-4xl mt-8">
-          <div className="text-lg font-serif text-foreground leading-relaxed">
-            <div className="flex items-center mb-8">
-              <h1 className="text-3xl font-medium text-[var(--accent)]">
-                Work Experience
-              </h1>
-              <div className="flex-grow border-t border-[var(--border-color)] ml-4" />
-            </div>
-
-            <div className="space-y-8">
-              {experiences.map(
-                ({ logo, company, title, duration, tech, bullets }) => (
-                  <div
-                    key={company}
-                    className="group border border-[var(--border-color)] bg-[var(--background)] p-6 rounded-2xl shadow-sm cursor-pointer
-                    transition-transform transition-shadow duration-300
-                    hover:scale-[1.03] hover:shadow-lg"
-                  >
-                    <div className="flex items-start gap-5">
-                      <Image
-                        src={logo}
-                        alt={`${company} Logo`}
-                        width={60}
-                        height={60}
-                        className="object-contain rounded-md flex-shrink-0"
-                      />
-
-                      <div className="flex-grow">
-                        <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-2">
-                          <h2 className="text-xl font-semibold font-serif">
-                            {company}
-                          </h2>
-                          <p className="text-sm italic mt-1 sm:mt-0 text-[var(--foreground)]/60">
-                            {duration}
-                          </p>
-                        </div>
-                        <p className="italic text-base mb-3">{title}</p>
-                        <div className="flex flex-wrap gap-2 mb-4">
-                          {tech.map((stack, idx) => (
-                            <span
-                              key={idx}
-                              className="text-xs bg-[var(--accent)]/10 text-[var(--accent)] px-2 py-1 rounded-md font-medium"
-                            >
-                              {stack}
-                            </span>
-                          ))}
-                        </div>
-                        <ul className="list-disc list-inside space-y-3 text-base leading-relaxed">
-                          {bullets.map((point, idx) => (
-                            <li key={idx}>{point}</li>
-                          ))}
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                )
-              )}
-            </div>
-
-            <div className="border-b border-[var(--border-color)] w-full mt-16" />
+      <main className="flex-grow w-full max-w-[1000px] mx-auto px-4 sm:px-6 py-16">
+        <FadeUp>
+          <div className="flex items-center mb-10">
+            <h1
+              className="text-3xl mr-4 whitespace-nowrap"
+              style={{ fontFamily: "var(--font-heading)", color: "var(--accent)", fontWeight: 500 }}
+            >
+              Work Experience
+            </h1>
+            <div className="flex-grow border-t border-[var(--border-color)]" />
           </div>
-        </section>
+        </FadeUp>
+
+        <div className="space-y-6">
+          {experiences.map(({ logo, company, title, duration, tech, bullets }, i) => (
+            <FadeUp key={`${company}-${title}`} delay={i * 0.07}>
+              <div
+                className="group border border-[var(--border-color)] bg-[var(--background)] p-6 rounded-2xl shadow-sm
+                  transition-all duration-300 hover:scale-[1.015] hover:shadow-md cursor-pointer"
+              >
+                <div className="flex items-start gap-5">
+                  <Image
+                    src={logo}
+                    alt={`${company} Logo`}
+                    width={56}
+                    height={56}
+                    className="object-contain rounded-md flex-shrink-0 mt-1"
+                  />
+
+                  <div className="flex-grow min-w-0">
+                    <div className="flex flex-col sm:flex-row sm:items-baseline justify-between mb-1 gap-1">
+                      <h2
+                        className="text-xl"
+                        style={{ fontFamily: "var(--font-heading)", fontWeight: 500 }}
+                      >
+                        {company}
+                      </h2>
+                      <p
+                        className="text-sm"
+                        style={{ fontFamily: "var(--font-body)", color: "var(--muted)", fontWeight: 300 }}
+                      >
+                        {duration}
+                      </p>
+                    </div>
+
+                    <p
+                      className="text-sm italic mb-3"
+                      style={{ fontFamily: "var(--font-body)", color: "var(--secondary)", fontWeight: 400 }}
+                    >
+                      {title}
+                    </p>
+
+                    <div className="flex flex-wrap gap-2 mb-4">
+                      {tech.map((stack) => (
+                        <span
+                          key={stack}
+                          className="text-xs px-2.5 py-1 rounded-full font-medium"
+                          style={{
+                            backgroundColor: "var(--accent-light)",
+                            color: "var(--accent)",
+                            fontFamily: "var(--font-body)",
+                          }}
+                        >
+                          {stack}
+                        </span>
+                      ))}
+                    </div>
+
+                    <ul className="list-disc list-inside space-y-2">
+                      {bullets.map((point, idx) => (
+                        <li
+                          key={idx}
+                          className="text-sm leading-relaxed"
+                          style={{ fontFamily: "var(--font-body)", fontWeight: 300 }}
+                        >
+                          {point}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </FadeUp>
+          ))}
+        </div>
       </main>
+      <Footer />
     </div>
   );
 }
