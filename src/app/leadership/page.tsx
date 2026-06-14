@@ -139,41 +139,6 @@ export default function Leadership() {
                   fontWeight: 700,
                 }}
               >
-                Highlights
-              </h3>
-              <ul className="list-disc ml-5 mb-8 space-y-2">
-                {[
-                  <>
-                    Grew Cal Poly SWE to the{" "}
-                    <strong>
-                      third-largest collegiate section in the country
-                    </strong>
-                  </>,
-                  <>
-                    Launched the DEI Assistants initiative across all five SWE
-                    cores
-                  </>,
-                  <>
-                    Partnered with Pasadena City College to help them become a
-                    SWE affiliate
-                  </>,
-                  <>
-                    Helped bring in 15+ corporate sponsors and spoke at Evening
-                    with Industry, which drew a{" "}
-                    <strong>record 360 attendees</strong>
-                  </>,
-                ].map((item, i) => (
-                  <li
-                    key={i}
-                    className="text-sm leading-relaxed"
-                    style={{ fontFamily: "var(--font-body)", fontWeight: 300 }}
-                  >
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </FadeUp>
-
             {/* Previous roles */}
             <FadeUp delay={0.22}>
               <h2
