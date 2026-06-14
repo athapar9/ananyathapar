@@ -53,7 +53,7 @@ export default function Projects() {
               className="text-sm italic"
               style={{ fontFamily: "var(--font-body)", color: "var(--secondary)", fontWeight: 300 }}
             >
-              Fun fact: I coded this website myself — fueled by lots of coffee ☕
+              Fun fact: I coded this website myself with the help of lots of coffee ☕
             </p>
           </div>
         </FadeUp>
