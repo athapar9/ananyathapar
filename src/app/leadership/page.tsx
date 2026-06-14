@@ -139,7 +139,9 @@ export default function Leadership() {
                   fontWeight: 700,
                 }}
               >
-            {/* Previous roles */}
+                Previous roles
+              </h3>
+            </FadeUp>
             <FadeUp delay={0.22}>
               <h2
                 className="text-xl mb-4"
