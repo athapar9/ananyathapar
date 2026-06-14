@@ -12,14 +12,17 @@ export default function Leadership() {
       <Header />
       <main className="flex-grow w-full max-w-[1200px] mx-auto px-6 py-16">
         <section className="flex flex-col lg:flex-row items-start gap-16">
-
           {/* Text column */}
           <div className="flex-grow max-w-full lg:max-w-[600px]">
             <FadeUp>
               <div className="flex items-center mb-8">
                 <h1
                   className="text-3xl mr-4 whitespace-nowrap"
-                  style={{ fontFamily: "var(--font-heading)", color: "var(--accent)", fontWeight: 500 }}
+                  style={{
+                    fontFamily: "var(--font-heading)",
+                    color: "var(--accent)",
+                    fontWeight: 500,
+                  }}
                 >
                   Leadership
                 </h1>
@@ -31,13 +34,20 @@ export default function Leadership() {
             <FadeUp delay={0.06}>
               <h2
                 className="text-xl mb-4"
-                style={{ fontFamily: "var(--font-heading)", color: "var(--accent)", fontWeight: 500 }}
+                style={{
+                  fontFamily: "var(--font-heading)",
+                  color: "var(--accent)",
+                  fontWeight: 500,
+                }}
               >
                 Awards & Honors
               </h2>
               <ul className="space-y-3 list-none mb-8">
                 <li className="p-4 rounded-xl border border-[var(--border-color)] bg-[var(--accent-light)]">
-                  <p className="text-sm font-semibold mb-1" style={{ fontFamily: "var(--font-body)" }}>
+                  <p
+                    className="text-sm font-semibold mb-1"
+                    style={{ fontFamily: "var(--font-body)" }}
+                  >
                     <a
                       href="https://ceng.calpoly.edu/connection/2025/06/college-of-engineering-student-awards/"
                       target="_blank"
@@ -49,17 +59,30 @@ export default function Leadership() {
                     </a>{" "}
                     · Cal Poly College of Engineering
                   </p>
-                  <p className="text-sm" style={{ fontFamily: "var(--font-body)", fontWeight: 300 }}>
-                    One of four recipients from a graduating class of 6,000+ engineers.
+                  <p
+                    className="text-sm"
+                    style={{ fontFamily: "var(--font-body)", fontWeight: 300 }}
+                  >
+                    One of four recipients from a graduating class of 6,000+
+                    engineers.
                   </p>
                 </li>
                 <li className="p-4 rounded-xl border border-[var(--border-color)] bg-[var(--accent-light)]">
-                  <p className="text-sm font-semibold mb-1" style={{ fontFamily: "var(--font-body)" }}>
-                    <span style={{ color: "var(--accent)" }}>Outstanding Collegiate Member</span>{" "}
+                  <p
+                    className="text-sm font-semibold mb-1"
+                    style={{ fontFamily: "var(--font-body)" }}
+                  >
+                    <span style={{ color: "var(--accent)" }}>
+                      Outstanding Collegiate Member
+                    </span>{" "}
                     · Society of Women Engineers
                   </p>
-                  <p className="text-sm" style={{ fontFamily: "var(--font-body)", fontWeight: 300 }}>
-                    National recognition for the top 20 student leaders across all SWE collegiate sections.
+                  <p
+                    className="text-sm"
+                    style={{ fontFamily: "var(--font-body)", fontWeight: 300 }}
+                  >
+                    National recognition for the top 20 student leaders across
+                    all SWE collegiate sections.
                   </p>
                 </li>
               </ul>
@@ -67,60 +90,142 @@ export default function Leadership() {
 
             {/* Intro */}
 
-
             {/* President */}
             <FadeUp delay={0.14}>
               <h2
                 className="text-xl mb-3"
-                style={{ fontFamily: "var(--font-heading)", color: "var(--accent)", fontWeight: 500 }}
+                style={{
+                  fontFamily: "var(--font-heading)",
+                  color: "var(--accent)",
+                  fontWeight: 500,
+                }}
               >
                 President, Cal Poly SWE
               </h2>
-              <p className="mb-4 text-base leading-[1.8]" style={{ fontFamily: "var(--font-body)", fontWeight: 300 }}>
+              <p
+                className="mb-4 text-base leading-[1.8]"
+                style={{ fontFamily: "var(--font-body)", fontWeight: 300 }}
+              >
                 I led Cal Poly SWE as it grew into the{" "}
-                <strong>third-largest collegiate SWE section in the country</strong>, serving 650+ students
-                with a team of 40 officers. We ran 100+ events a year, including Evening with Industry which
-                hit a record 360 attendees. I managed an eight-member exec board and worked closely with
-                university administration to secure funding and advocate for the club.
+                <strong>
+                  third-largest collegiate SWE section in the country
+                </strong>
+                , serving 650+ students with a team of 40 officers. We ran 100+
+                events a year, including Evening with Industry which hit a
+                record 360 attendees. I managed an eight-member exec board and
+                worked closely with university administration to secure funding
+                and advocate for the club.
               </p>
-              <p className="mb-5 text-base leading-[1.8]" style={{ fontFamily: "var(--font-body)", fontWeight: 300 }}>
-                My biggest focus as president was making DEI a shared responsibility across the whole org,
-                not just one team's job. Under my presidency we expanded the DEI Assistants initiative
-                across all five cores, implemented demographic tracking to actually measure progress, and
-                launched a collaboration between the DEI and Outreach cores that produced free bilingual
-                educational materials for K-8 students.
+              <p
+                className="mb-5 text-base leading-[1.8]"
+                style={{ fontFamily: "var(--font-body)", fontWeight: 300 }}
+              >
+                My biggest focus as president was making DEI a shared
+                responsibility across the whole org, not just one team's job.
+                Under my presidency we expanded the DEI Assistants initiative
+                across all five cores, implemented demographic tracking to
+                actually measure progress, and encouraged cross-core
+                collaboration to embed DEI principles into all aspects of the
+                organization.
               </p>
             </FadeUp>
 
+            <FadeUp delay={0.18}>
+              <h3
+                className="text-xs uppercase tracking-widest mb-3"
+                style={{
+                  fontFamily: "var(--font-body)",
+                  color: "var(--secondary)",
+                  fontWeight: 700,
+                }}
+              >
+                Highlights
+              </h3>
+              <ul className="list-disc ml-5 mb-8 space-y-2">
+                {[
+                  <>
+                    Grew Cal Poly SWE to the{" "}
+                    <strong>
+                      third-largest collegiate section in the country
+                    </strong>
+                  </>,
+                  <>
+                    Launched the DEI Assistants initiative across all five SWE
+                    cores
+                  </>,
+                  <>
+                    Partnered with Pasadena City College to help them become a
+                    SWE affiliate
+                  </>,
+                  <>
+                    Helped bring in 15+ corporate sponsors and spoke at Evening
+                    with Industry, which drew a{" "}
+                    <strong>record 360 attendees</strong>
+                  </>,
+                ].map((item, i) => (
+                  <li
+                    key={i}
+                    className="text-sm leading-relaxed"
+                    style={{ fontFamily: "var(--font-body)", fontWeight: 300 }}
+                  >
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </FadeUp>
 
             {/* Previous roles */}
             <FadeUp delay={0.22}>
               <h2
                 className="text-xl mb-4"
-                style={{ fontFamily: "var(--font-heading)", color: "var(--accent)", fontWeight: 500 }}
+                style={{
+                  fontFamily: "var(--font-heading)",
+                  color: "var(--accent)",
+                  fontWeight: 500,
+                }}
               >
                 Previous Roles in CPSWE
               </h2>
               <div className="space-y-4 mb-8">
                 <div className="pl-4 border-l-2 border-[var(--accent-light)]">
-                  <p className="text-sm font-semibold mb-1" style={{ fontFamily: "var(--font-body)", color: "var(--accent)" }}>
+                  <p
+                    className="text-sm font-semibold mb-1"
+                    style={{
+                      fontFamily: "var(--font-body)",
+                      color: "var(--accent)",
+                    }}
+                  >
                     Vice President of Membership
                   </p>
-                  <p className="text-sm leading-relaxed" style={{ fontFamily: "var(--font-body)", fontWeight: 300 }}>
-                    Led a team of five across 25+ events, recruited 200+ new members, and mentored five
-                    freshman reps through weekly 1:1s. All five became official officers the following year.
-                    I also worked with the EE department to bring in underrepresented women from a major
-                    that hadn't engaged much with SWE before.
+                  <p
+                    className="text-sm leading-relaxed"
+                    style={{ fontFamily: "var(--font-body)", fontWeight: 300 }}
+                  >
+                    Led a team of five across 25+ events, recruited 200+ new
+                    members, and mentored five freshman reps through weekly
+                    1:1s. All five became official officers the following year.
+                    I also worked with the EE department to bring in
+                    underrepresented women from a major that hadn't engaged much
+                    with SWE before.
                   </p>
                 </div>
                 <div className="pl-4 border-l-2 border-[var(--accent-light)]">
-                  <p className="text-sm font-semibold mb-1" style={{ fontFamily: "var(--font-body)", color: "var(--accent)" }}>
+                  <p
+                    className="text-sm font-semibold mb-1"
+                    style={{
+                      fontFamily: "var(--font-body)",
+                      color: "var(--accent)",
+                    }}
+                  >
                     Professional Development Chair
                   </p>
-                  <p className="text-sm leading-relaxed" style={{ fontFamily: "var(--font-body)", fontWeight: 300 }}>
-                    Coordinated academic days across 10+ departments, ran resume workshops and EWI prep
-                    sessions, and helped recruit 180+ new members that year with 400+ students attending
-                    our showcase.
+                  <p
+                    className="text-sm leading-relaxed"
+                    style={{ fontFamily: "var(--font-body)", fontWeight: 300 }}
+                  >
+                    Coordinated academic days across 10+ departments, ran resume
+                    workshops and EWI prep sessions, and helped recruit 180+ new
+                    members that year with 400+ students attending our showcase.
                   </p>
                 </div>
               </div>
@@ -130,34 +235,69 @@ export default function Leadership() {
             <FadeUp delay={0.26}>
               <h2
                 className="text-xl mb-4"
-                style={{ fontFamily: "var(--font-heading)", color: "var(--accent)", fontWeight: 500 }}
+                style={{
+                  fontFamily: "var(--font-heading)",
+                  color: "var(--accent)",
+                  fontWeight: 500,
+                }}
               >
                 Additional Involvement
               </h2>
               <div className="space-y-4 mb-6">
                 <div className="pl-4 border-l-2 border-[var(--accent-light)]">
-                  <p className="text-sm font-semibold mb-1" style={{ fontFamily: "var(--font-body)", color: "var(--accent)" }}>
-                    <a href="https://wishcalpoly.com/" className="underline decoration-[var(--accent)] underline-offset-4 hover:text-[var(--accent-hover)] transition-colors" target="_blank" rel="noopener noreferrer">
+                  <p
+                    className="text-sm font-semibold mb-1"
+                    style={{
+                      fontFamily: "var(--font-body)",
+                      color: "var(--accent)",
+                    }}
+                  >
+                    <a
+                      href="https://wishcalpoly.com/"
+                      className="underline decoration-[var(--accent)] underline-offset-4 hover:text-[var(--accent-hover)] transition-colors"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       Women in Software and Hardware (WISH)
                     </a>{" "}
                     · Mentorship Officer
                   </p>
-                  <p className="text-sm leading-relaxed" style={{ fontFamily: "var(--font-body)", fontWeight: 300 }}>
-                    Supported 30 underclasswomen in CS by connecting them with experienced upperclassmen
-                    and organizing mentorship events. One of my mentees went on to become a SWE officer herself.
+                  <p
+                    className="text-sm leading-relaxed"
+                    style={{ fontFamily: "var(--font-body)", fontWeight: 300 }}
+                  >
+                    Supported 30 underclasswomen in CS by connecting them with
+                    experienced upperclassmen and organizing mentorship events.
+                    One of my mentees went on to become a SWE officer herself.
                   </p>
                 </div>
                 <div className="pl-4 border-l-2 border-[var(--accent-light)]">
-                  <p className="text-sm font-semibold mb-1" style={{ fontFamily: "var(--font-body)", color: "var(--accent)" }}>
-                    <a href="https://thepercentageproject.com/" className="underline decoration-[var(--accent)] underline-offset-4 hover:text-[var(--accent-hover)] transition-colors" target="_blank" rel="noopener noreferrer">
+                  <p
+                    className="text-sm font-semibold mb-1"
+                    style={{
+                      fontFamily: "var(--font-body)",
+                      color: "var(--accent)",
+                    }}
+                  >
+                    <a
+                      href="https://thepercentageproject.com/"
+                      className="underline decoration-[var(--accent)] underline-offset-4 hover:text-[var(--accent-hover)] transition-colors"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       The Percentage Project
                     </a>{" "}
                     · Cal Poly Representative
                   </p>
-                  <p className="text-sm leading-relaxed" style={{ fontFamily: "var(--font-body)", fontWeight: 300 }}>
-                    Led survey distribution across Cal Poly engineering students, reaching 100+ participants.
-                    The nationwide initiative gathered data from 4,500+ students across 12 universities, with
-                    findings published to drive conversations around DEI in engineering education.
+                  <p
+                    className="text-sm leading-relaxed"
+                    style={{ fontFamily: "var(--font-body)", fontWeight: 300 }}
+                  >
+                    Led survey distribution across Cal Poly engineering
+                    students, reaching 100+ participants. The nationwide
+                    initiative gathered data from 4,500+ students across 12
+                    universities, with findings published to drive conversations
+                    around DEI in engineering education.
                   </p>
                 </div>
               </div>
@@ -166,9 +306,15 @@ export default function Leadership() {
           </div>
 
           {/* Photo column */}
-          <FadeUp delay={0.05} className="flex flex-col gap-5 w-full lg:w-[460px]">
+          <FadeUp
+            delay={0.05}
+            className="flex flex-col gap-5 w-full lg:w-[460px]"
+          >
             <div className="grid grid-cols-2 gap-4 w-full">
-              <div className="group relative rounded-xl overflow-hidden shadow-[0_8px_24px_rgba(0,0,0,0.1)] cursor-pointer" style={{ aspectRatio: "3/4" }}>
+              <div
+                className="group relative rounded-xl overflow-hidden shadow-[0_8px_24px_rgba(0,0,0,0.1)] cursor-pointer"
+                style={{ aspectRatio: "3/4" }}
+              >
                 <Image
                   src={ewi_advisor}
                   alt="Photo with my advisor, Dr. Helene Finger"
@@ -182,7 +328,10 @@ export default function Leadership() {
                 </div>
               </div>
 
-              <div className="group relative rounded-xl overflow-hidden shadow-[0_8px_24px_rgba(0,0,0,0.1)] cursor-pointer" style={{ aspectRatio: "3/4" }}>
+              <div
+                className="group relative rounded-xl overflow-hidden shadow-[0_8px_24px_rgba(0,0,0,0.1)] cursor-pointer"
+                style={{ aspectRatio: "3/4" }}
+              >
                 <Image
                   src={ewi_speaking}
                   alt="Ananya speaking at Evening With Industry"
@@ -197,7 +346,10 @@ export default function Leadership() {
               </div>
             </div>
 
-            <div className="group relative w-full rounded-xl overflow-hidden shadow-[0_8px_24px_rgba(0,0,0,0.1)] cursor-pointer" style={{ aspectRatio: "4/3" }}>
+            <div
+              className="group relative w-full rounded-xl overflow-hidden shadow-[0_8px_24px_rgba(0,0,0,0.1)] cursor-pointer"
+              style={{ aspectRatio: "4/3" }}
+            >
               <Image
                 src={ewi24}
                 alt="Cal Poly Society of Women Engineers Executive Board 2023-2024"
