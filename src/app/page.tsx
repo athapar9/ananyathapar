@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import Header from "./components/header";
 import Footer from "./components/footer";
 import FadeUp from "./components/FadeUp";
@@ -9,116 +10,89 @@ export default function Home() {
     <div className="min-h-screen flex flex-col">
       <Header />
 
-      <main className="flex-grow w-full max-w-[1200px] mx-auto px-6 py-20">
-        
-        <section className="grid grid-cols-1 lg:grid-cols-[1.6fr_1fr] gap-20 items-center">
-          
-          {/* LEFT COLUMN */}
-          <div className="max-w-[620px] space-y-8">
-            
-            {/* Eyebrow + Title block */}
-            <FadeUp className="space-y-4">
-              <p
-                className="text-xs tracking-[0.2em] uppercase"
-                style={{
-                  fontFamily: "var(--font-body)",
-                  color: "var(--secondary)",
-                  fontWeight: 400,
-                }}
-              >
-                Software Engineer · Microsoft
+      <main className="flex-1 w-full max-w-[1100px] mx-auto px-6">
+        <section className="grid lg:grid-cols-[1.1fr_0.9fr] gap-16 items-center pt-16 pb-12 lg:pt-24 lg:pb-16">
+          <FadeUp>
+            <p className="eyebrow mb-5">Software Engineer · Microsoft</p>
+
+            <h1 className="font-display text-[2.75rem] sm:text-[3.4rem] leading-[1.08] text-[var(--ink)] mb-7">
+              Hey there,
+              <br />
+              I&apos;m Ananya.
+            </h1>
+
+            <div className="space-y-6 text-lg text-[var(--ink-soft)] leading-relaxed mb-9">
+              <p>
+                I'm a Software Engineer on the Azure Compute team at Microsoft,
+                working on systems that power cloud infrastructure at scale.
+                I&apos;m drawn to product engineering, developer tools, and
+                experiences that make someone&apos;s work meaningfully easier.
+                Outside of work you&apos;ll find me hiking, cooking with
+                friends, or curled up with my dog and a good book.
               </p>
-
-              <div className="flex items-center gap-4">
-                <h1
-                  className="text-4xl leading-tight whitespace-nowrap"
-                  style={{
-                    fontFamily: "var(--font-heading)",
-                    color: "var(--accent)",
-                    fontWeight: 500,
-                  }}
-                >
-                  Hey, I'm Ananya!
-                </h1>
-
-                <div className="flex-1 h-px bg-[var(--border-color)]" />
-              </div>
-            </FadeUp>
-
-            {/* Body content */}
-            <div className="space-y-5">
-              
-              <FadeUp delay={0.05}>
-                <p className="text-base leading-[1.8]" style={{ fontFamily: "var(--font-body)", fontWeight: 300 }}>
-                  I'm a Software Engineer on the Azure Compute team at Microsoft,
-                  working on systems that power cloud infrastructure at scale. I
-                  graduated in June 2025 from{" "}
-                  <a
-                    href="https://www.calpoly.edu/major/computer-science"
-                    className="underline decoration-[var(--accent)] underline-offset-4"
-                    style={{ color: "var(--accent)" }}
-                  >
-                    Cal Poly San Luis Obispo
-                  </a>
-                  {" "}with a B.S. in Computer Science and a concentration in AI.
-                </p>
-              </FadeUp>
-
-              <FadeUp delay={0.1}>
-                <p className="text-base leading-[1.8]" style={{ fontFamily: "var(--font-body)", fontWeight: 300 }}>
-                  I am passionate about building things that actually matter to people.
-                  I'm happiest when I'm working across disciplines and shipping
-                  something I'm proud of. I also spent my last year at Cal Poly as
-                  President of{" "}
-                  <a
-                    href="https://www.calpolyswe.com/"
-                    className="underline decoration-[var(--accent)] underline-offset-4"
-                    style={{ color: "var(--accent)" }}
-                  >
-                    Cal Poly SWE
-                  </a>
-                  .
-                </p>
-              </FadeUp>
-
-              <FadeUp delay={0.15}>
-                <p className="text-base leading-[1.8]" style={{ fontFamily: "var(--font-body)", fontWeight: 300 }}>
-                  At the heart of everything I do is a drive to build meaningful,
-                  lasting impact in the projects I work on and the teams I join.
-                </p>
-              </FadeUp>
-
-              <FadeUp delay={0.2}>
-                <p className="text-base leading-[1.8]" style={{ fontFamily: "var(--font-body)", fontWeight: 300 }}>
-                  Outside of work you can find me hiking, cooking with friends,
-                  or curled up with my dog and a book.
-                </p>
-              </FadeUp>
             </div>
 
-            {/* Divider (intentional end anchor) */}
-            <FadeUp delay={0.25}>
-              <div className="pt-2 border-t border-[var(--border-color)]" />
-            </FadeUp>
-
-          </div>
-
-          {/* RIGHT COLUMN */}
-          <FadeUp className="w-full lg:w-[360px]">
-            <div className="relative aspect-[11/13] rounded-2xl overflow-hidden shadow-[0_6px_18px_rgba(0,0,0,0.08)]">
-              <Image
-                src={headshot}
-                alt="Ananya's Headshot"
-                fill
-                priority
-                className="object-cover transition-transform duration-500 ease-out hover:scale-[1.02]"
-                sizes="(max-width: 1024px) 100vw, 360px"
-              />
+            <div className="flex flex-wrap gap-4">
+              <Link
+                href="mailto:athapar24@gmail.com"
+                className="px-6 py-3 rounded-full bg-[var(--accent)] text-white text-sm font-medium hover:bg-[var(--accent-hover)] transition-colors"
+              >
+                Get in touch
+              </Link>
             </div>
           </FadeUp>
 
+          <FadeUp delay={0.1}>
+            <div className="relative w-full max-w-[360px] mx-auto aspect-[4/5] rounded-2xl overflow-hidden shadow-[0_20px_50px_rgba(20,24,27,0.12)]">
+              <Image
+                src={headshot}
+                alt="Ananya Thapar"
+                fill
+                priority
+                className="object-cover"
+                sizes="(max-width: 1024px) 80vw, 360px"
+              />
+            </div>
+          </FadeUp>
         </section>
+
+        <FadeUp delay={0.15}>
+          <section className="grid sm:grid-cols-3 gap-8 pt-4 pb-24 border-t border-[var(--border-color)]">
+            <div>
+              <p className="eyebrow mb-3">Engineer</p>
+              <p className="text-[var(--ink-soft)] leading-relaxed">
+                Cloud systems at Microsoft Azure Compute. I focus on building
+                scalable data infrastructure and improving system reliability
+                across large distributed environments. I care about designing
+                clean, maintainable architecture and shipping changes that
+                reduce friction for people that depend on these systems every
+                day.
+              </p>
+            </div>
+
+            <div>
+              <p className="eyebrow mb-3">Leader</p>
+              <p className="text-[var(--ink-soft)] leading-relaxed">
+                In my final year at Cal Poly, I served as President of the
+                Society of Women Engineers, leading 42 officers and a community
+                of 650+ members. It taught me that the best teams feel like
+                communities, and I've carried that into everything I build and
+                lead since.
+              </p>
+            </div>
+
+            <div>
+              <p className="eyebrow mb-3">Builder</p>
+              <p className="text-[var(--ink-soft)] leading-relaxed">
+                I love building things people actually use by taking ideas from
+                concept to shipped product, owning the full stack, and staying
+                close enough to the user to know if it's actually working.
+              </p>
+            </div>
+          </section>
+        </FadeUp>
       </main>
+
       <Footer />
     </div>
   );
