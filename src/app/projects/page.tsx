@@ -39,6 +39,21 @@ const projects = [
     tech: ["Python", "DuckDB", "PySpark", "SQL"],
     github: "https://github.com/ananyaaa-t/Reddit-Analysis",
   },
+  {
+    title: "Closetful",
+    problem:
+      "Online shopping wishlists are scattered across dozens of tabs and stores, and re-sorting saved items by category is manual, tedious busywork.",
+    impact:
+      "Built a full-stack platform + Chrome extension letting users save products from any site with one click; items are auto-categorized via Gemini's structured output, and a DOM-level scraping approach in the extension bypasses bot protection that blocks server-side scraping on sites like Sephora.",
+    tech: [
+      "Next.js",
+      "TypeScript",
+      "Supabase",
+      "Google Gemini",
+      "Chrome Extension (Manifest V3)",
+    ],
+    github: "https://github.com/ananyaaa-t/closetful-web",
+  },
 ];
 
 export default function Projects() {
@@ -52,7 +67,8 @@ export default function Projects() {
             Projects
           </h1>
           <p className="text-[var(--ink-soft)] max-w-[560px] mb-12">
-            Fun fact: I coded this website myself with the help of lots of coffee ☕
+            Fun fact: I coded this website myself with the help of lots of
+            coffee ☕
           </p>
         </FadeUp>
 
