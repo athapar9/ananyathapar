@@ -3,7 +3,7 @@ import Footer from "../components/footer";
 import FadeUp from "../components/FadeUp";
 
 const projects = [
-    {
+  {
     title: "Closetful",
     problem:
       "Online shopping wishlists are scattered across dozens of tabs and stores, and re-sorting saved items by category is manual, tedious busywork.",
@@ -19,13 +19,13 @@ const projects = [
     github: "https://github.com/ananyaaa-t/closetful-web",
   },
   {
-    title: "Potion Shop API",
+    title: "Braindump",
     problem:
-      "A multi-week competition required a backend that could handle thousands of simulated customers shopping concurrently without breaking on race conditions or going down under load.",
+      "Apple Notes offers too little structure for organizing thoughts, while Notion offers too much — most people just want a fast place to jot things down without folders, nested pages, or a block editor slowing them down.",
     impact:
-      "Built and deployed a REST API supporting 100k+ product combinations and 1,500+ concurrent users, with concurrency-safe backend logic and an optimized schema for low-latency reads and writes under load.",
-    tech: ["Python", "FastAPI", "PostgreSQL", "Supabase", "SQLAlchemy"],
-    github: "https://github.com/ananyaaa-t/Potion-Shop-API",
+      "Designed and shipped a native iOS notes app with a pastel, minimal aesthetic, integrating Apple's on-device FoundationModels framework to generate smart tags and summaries entirely offline — plus voice dictation, a soft-delete recovery flow, a home screen widget, and full VoiceOver accessibility support.",
+    tech: ["Swift", "SwiftUI", "SwiftData", "FoundationModels", "WidgetKit"],
+    github: "https://github.com/ananyaaa-t/braindump",
   },
   {
     title: "Git Fit",
@@ -35,6 +35,15 @@ const projects = [
       "Built the exercise management features end to end as part of a five-person team: workout and exercise CRUD, search and browse, and social follow features across the frontend and backend.",
     tech: ["Next.js", "Supabase", "PostgreSQL", "REST APIs"],
     github: "https://github.com/ryanchansf/git-fit",
+  },
+  {
+    title: "Potion Shop API",
+    problem:
+      "A multi-week competition required a backend that could handle thousands of simulated customers shopping concurrently without breaking on race conditions or going down under load.",
+    impact:
+      "Built and deployed a REST API supporting 100k+ product combinations and 1,500+ concurrent users, with concurrency-safe backend logic and an optimized schema for low-latency reads and writes under load.",
+    tech: ["Python", "FastAPI", "PostgreSQL", "Supabase", "SQLAlchemy"],
+    github: "https://github.com/ananyaaa-t/Potion-Shop-API",
   },
   {
     title: "Dog Breed Classifier",
