@@ -23,7 +23,7 @@ const projects = [
     problem:
       "Some note apps offers too little structure for organizing thoughts, while others offer too much that it becomes overwhelming. Most people just want a fast place to jot things down without folders, nested pages, or a block editor slowing them down.",
     impact:
-      "Designed and shipped a native iOS notes app with a pastel, minimal aesthetic, integrating Apple's on-device FoundationModels framework to generate smart tags and summaries entirely offline — plus voice dictation, a soft-delete recovery flow, a home screen widget, and full VoiceOver accessibility support.",
+      "Designed and shipped a native iOS notes app with a pastel, minimal aesthetic, integrating Apple's on-device FoundationModels framework to generate smart tags and summaries entirely offline. Additional features include voice dictation, a soft-delete recovery flow, a home screen widget, and full VoiceOver accessibility support.",
     tech: ["Swift", "SwiftUI", "SwiftData", "FoundationModels", "WidgetKit"],
     github: "https://github.com/ananyaaa-t/braindump",
   },
